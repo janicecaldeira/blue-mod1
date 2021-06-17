@@ -10,10 +10,8 @@ while cont == 0:
     continuar = input("Deseja adicionar outro valor? [SIM/NÃO]").upper()
     if continuar != "SIM":
         cont += 1
-    if valor in lista:
-        pass
-    else:
-        lista.append(valor)
+    if valor not in lista:
+        lista.append(valor)        
 
 lista.sort()
 
