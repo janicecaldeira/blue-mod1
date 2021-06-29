@@ -6,28 +6,7 @@ import random
 
 palavras = ["AMARELO", "PEIXE", "LARANJA", "MACACO", "PIADA", "GELADO", "AMARGO", "QUERIDA", "UNIVERSO"]
 
-sorteio = random.randint(0,len(palavras)-1)
+palavra_sorteada = random.choice(palavras)
+palavra_sorteada = list('_' * len(palavra_sorteada))
 
-forca = palavras[sorteio]
-
-erros = 0
-chances = 6
-tentativa = ""
-print(forca)
-while chances != 0:
-    tentativa = input("Tente acertar a palavra: ").upper()
-    if tentativa == forca:
-        print("Parabéns! Você ganhou!")
-        chances = 0
-    else:
-        erros += 1
-        chances -= 1
-        if chances > 1:
-            print("Você ainda tem", chances, "tentativas")
-        elif chances == 1:
-            print("Cuidado! É a sua última tentativa!")
-        else:
-            pass
-
-if erros >= 6:
-    print("Você perdeu! A palavra era:", forca)
+print(' '.join(palavra_sorteada))
