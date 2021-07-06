@@ -1,0 +1,6 @@
+"*":
+  core:
+    telemetryConsent: "limited"
+    uriHandlerRegistration: "always"
+  "exception-reporting":
+    userId: "627eeab2-8434-4a90-b12e-842950b7fb13"
