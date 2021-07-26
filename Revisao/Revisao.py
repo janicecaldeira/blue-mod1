@@ -1,42 +1,19 @@
-# return
-# orientação a objeto
-
-# for
-
-# frutas = ["abacaxi","laranja","melancia","morango","pera"]
-
-# quantidade_elementos = len(frutas)
-
-# print(quantidade_elementos)
-
-# elemento = frutas[3]
-
-# print(elemento)
-
-# for indice, elemento in enumerate(frutas):
-#     print(indice, elemento)
+import turtle
 
 
-# função
-
-# def educado(nome_da_pessoa):
-#     print(f"Olá {nome_da_pessoa}, seja muito bem vindo à Blue!")
-
-# nome = input("Qual seu nome? ")
+print("-~-.-~-.-~-."* 10)
+print("SUPER MARIO AO RESGATE".center(120))
+print("-~-.-~-.-~-." * 10)
 
 
-def autoriza(ano):
-    idade = 2021-ano
-
-    if idade < 16:
-        print("NEGADO")
-
-autorizado = autoriza(1990)
-
-if autorizado == 'NEGADO':
-    print("Você não pode votar")
-
-else:
-    print("Você está velho")
 
 
+color('red', 'yellow')
+begin_fill()
+while True:
+    forward(200)
+    left(170)
+    if abs(pos()) < 1:
+        break
+end_fill()
+done()
